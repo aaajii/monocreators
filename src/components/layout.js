@@ -1,7 +1,5 @@
-import React from "react"
+import React, { cloneElement } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -16,9 +14,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div className="p-4 pt-0">
-        <main>{children}</main>
+        <main>{cloneElement(children, { data })}</main>
       </div>
     </>
   )
