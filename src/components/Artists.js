@@ -1,5 +1,5 @@
-function Artists() {
-    return ( "Hero Page" );
+function Artists({people}) {
+    return ( "Artists Section" );
 }
 
 export default Artists;

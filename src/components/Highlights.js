@@ -1,5 +1,5 @@
-function Highlights() {
-    return ( "Hero Page" );
+function Highlights({list}) {
+    return ( "Highlights Section" );
 }
 
 export default Highlights;

@@ -1,11 +1,23 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from "../components/layout"
 import Hero from '../components/Hero'
 import Highlights from '../components/Highlights'
 import Artists from '../components/Artists'
 
-const IndexPage = ({data}) => (
+const IndexPage = () => { 
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+  
+  return(
   <Layout>
     Gatsby Home
     {/* Hero */}
@@ -15,6 +27,6 @@ const IndexPage = ({data}) => (
     {/* Artists */}
     <Artists people={data}/>
   </Layout>
-)
+)}
 
 export default IndexPage
