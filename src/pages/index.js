@@ -19,7 +19,6 @@ const IndexPage = () => {
   
   return(
   <Layout>
-    Gatsby Home
     {/* Hero */}
     <Hero />
     {/* Highlights */}
