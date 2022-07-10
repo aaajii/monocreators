@@ -6,7 +6,7 @@ const settings = {
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 500,
+  speed: 100,
 }
 
 function Highlights({ list }) {
@@ -35,9 +35,11 @@ function Highlights({ list }) {
         <div className="sm:flex flex-wrap justify-center w-full hidden">
           {renderList()}
         </div>
-        <Slider {...settings} className="overflow-hidden sm:hidden">
-          {renderList()}
-        </Slider>
+        <div className="sm:hidden">
+          <Slider {...settings} className="overflow-hidden">
+            {renderList()}
+          </Slider>
+        </div>
       </div>
     </div>
   )
