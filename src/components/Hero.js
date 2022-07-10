@@ -17,7 +17,12 @@ function Hero() {
               Adam Blackstone and Brian Frasier-Moore discuss Super Bowl 2020
               and more.
             </span>
-            <a href={BLOG_URL} target="_blank" className="p-4 py-2 rounded-md bg-orange-400 font-bold text-white w-fit">
+            <a
+              href={BLOG_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="p-4 py-2 rounded-md bg-orange-400 font-bold text-white w-fit"
+            >
               Read More
             </a>
           </div>
