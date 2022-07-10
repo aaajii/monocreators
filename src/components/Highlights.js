@@ -20,7 +20,7 @@ function Highlights({ list }) {
             className="object-cover t-0 h-full w-full"
           />
         </div>
-        <p className="text-center mt-4 sm:mt-8 text-3xl font-semibold">
+        <p className="text-center mt-4 sm:mt-8 text-lg sm:text-3xl font-semibold">
           {fullName}
         </p>
       </div>
